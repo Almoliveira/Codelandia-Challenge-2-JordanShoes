@@ -1,0 +1,56 @@
+@import url("../assets/fonts.css");
+
+.divContainer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 450px;
+  position: relative;
+}
+
+.imageBanner {
+  filter: brightness(50%);
+  width: 100%;
+  height: 450px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  float: right;
+  position: relative;
+}
+
+.textBanner {
+  position: absolute;
+  color: white;
+  z-index: 20;
+  width: 100%;
+  height: 450px;
+  font-family: "Montserrat";
+  display:flex;
+  align-items:center;
+  width:100%;
+  height:450px;
+}
+
+
+.textBannerContainer{
+    margin: 0 auto;
+    width: 1366px;
+}
+
+
+@media only screen and (max-width: 1366px) and (min-width: 800px)  {
+  .textBannerContainer{
+      margin: 0 auto;
+      width: 800px;
+  }
+  
+}
+
+@media only screen and (max-width: 799px) {
+  .textBannerContainer{
+      margin: 0 20px;
+      width: auto;
+  }
+
+}

@@ -1,0 +1,23 @@
+@import url('../assets/fonts.css');
+header>div:nth-of-type(odd) {
+    background: black;
+    color: white;
+}
+header>div:nth-of-type(even){
+    background: #F9F9F9;
+    color: #181818;
+}
+
+.HeaderItemContainer{
+    padding: 16px 0px;
+    text-align: center;
+    font-family: 'Montserrat';
+    height: auto;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 799px) {
+    .HeaderItemContainer>h3{
+        font-size: 12px;
+    }
+  }

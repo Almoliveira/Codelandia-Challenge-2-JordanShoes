@@ -1,0 +1,28 @@
+@import url("../variaveis.css");
+
+.jordanCard {
+  flex: 1 0 21%; /* explanation below */
+  background: var(--bgCard);
+  padding: 80px 18px;
+}
+
+
+.jordanImage{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 800px) {
+  .jordanCard {
+    flex: 1 0 34%; /* explanation below */
+    background: var(--bgCard);
+    padding: 18px;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .jordanCard {
+    flex: 1 0 100%; /* explanation below */
+    background: var(--bgCard);
+    padding: 18px;
+  }
+}
