@@ -1,0 +1,20 @@
+@import url("./assets/fonts.css");
+
+
+.footerPage{
+    background: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 28px 0px;
+    font-family: "Montserrat";
+    
+}
+
+
+.App {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

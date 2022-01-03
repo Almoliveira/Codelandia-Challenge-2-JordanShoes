@@ -6,9 +6,13 @@
   padding: 80px 18px;
 }
 
+.jordanImage {
+  cursor: pointer;
+}
 
-.jordanImage{
-    cursor: pointer;
+.jordanImage:hover {
+  transform: scale(1.3);
+  transition: 1s all ease;
 }
 
 @media only screen and (max-width: 1366px) and (min-width: 800px) {

@@ -1,6 +1,8 @@
 import Jordans from "../types/Jordans";
 import Product from "./Product";
 import styles from "./ProductsDisplay.module.css";
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 
 const ProductsDisplay: React.FC = () => {
   const DUMMY_DATA: Jordans[] = [
@@ -46,14 +48,27 @@ const ProductsDisplay: React.FC = () => {
     },
   ];
 
+  useEffect(() => {
+    const sr = ScrollReveal({
+      origin: "top",
+      distance: "50px",
+      duration: 2000,
+      reset: true,
+    });
+  
+    ScrollReveal().reveal("#myId", { delay: 500 });
+    ScrollReveal().reveal("#cardMapId", { delay: 500 });
+  }, [])
+ 
+
   return (
     <div className={styles.productContainer}>
       <h1>Destaques</h1>
-      <label>
+      <label id="labelId">
         Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado
       </label>
       <div className={styles.cardContainer}>
-        <div className={styles.cardMap}>
+        <div className={styles.cardMap} id="cardMapId">
           {DUMMY_DATA.map((item) => (
             <Product
               key={item.id}

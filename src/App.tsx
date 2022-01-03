@@ -1,15 +1,20 @@
-import './App.css';
-import HeaderPage from './components/HeaderPage';
-import ImageBanner from './components/ImageBanner';
-import ProductsDisplay from './components/ProductsDisplay';
-
+import "./App.css";
+import HeaderPage from "./components/HeaderPage";
+import ImageBanner from "./components/ImageBanner";
+import ProductsDisplay from "./components/ProductsDisplay";
 
 function App() {
   return (
     <div className="App">
-      <HeaderPage />
-      <ImageBanner />
-      <ProductsDisplay />
+      <main>
+        <HeaderPage />
+        <ImageBanner />
+        <ProductsDisplay />
+      </main>
+
+      <footer className="footerPage">
+        <p>Todos direitos Reservados</p>
+      </footer>
     </div>
   );
 }
